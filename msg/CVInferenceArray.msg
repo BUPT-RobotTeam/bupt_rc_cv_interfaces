@@ -1,0 +1,2 @@
+bupt_rc_cv_interfaces/CVInference[] inference_result
+bupt_rc_cv_interfaces/CVFrame img

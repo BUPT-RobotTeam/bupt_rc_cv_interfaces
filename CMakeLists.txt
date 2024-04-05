@@ -26,8 +26,12 @@ endif()
 # 添加自定义消息类型
 find_package(rosidl_default_generators REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}  
-    "msg/CVCameras.msg"  
-    "srv/CVDepth.srv"
+    "msg/CVCameras.msg"                     # Cameras类的msg
+    "msg/CVInference.msg"                   # Inference的msg
+    "msg/CVInferenceArray.msg"              # Inference的msg数组
+    "msg/CVFrame.msg"                       # 图片数据的msg
+    "srv/CVDepth.srv"                       # 深度数据的Srv
+    "srv/CVInferenceSendImg.srv"            # 控制推理是否发送图片数据
 )
 
 ament_package()
