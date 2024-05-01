@@ -28,11 +28,13 @@ find_package(rosidl_default_generators REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}  
     "msg/CVCamera.msg"                      # Camera的msg
     "msg/CVCameraArray.msg"                 # Camera的msg数组
-    "msg/CVInference.msg"                   # Inference的msg
-    "msg/CVInferenceArray.msg"              # Inference的msg数组
+    "msg/CVInference.msg"                   # Inference的基本msg
+    "msg/CVInferenceResult.msg"             # 一个摄像头推理的结果
+    "msg/CVInferenceArray.msg"              # 多个摄像头推理的结果
     "msg/CVFrame.msg"                       # 图片数据的msg
     "srv/CVDepth.srv"                       # 深度数据的Srv
     "srv/CVInferenceSendImg.srv"            # 控制推理是否发送图片数据
+    "srv/CVInferenceSwitch.srv"             # 控制是否进行推理
 )
 
 ament_package()

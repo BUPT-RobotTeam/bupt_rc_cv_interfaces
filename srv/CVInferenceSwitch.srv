@@ -1,0 +1,5 @@
+bool cmaera_ball_inference_enable
+bool camera_seedlings_inference_enable
+---
+bool camera_ball_inference_status
+bool camera_seedlings_inference_status
