@@ -1,5 +1,9 @@
-bool cmaera_ball_inference_enable
-bool camera_seedlings_inference_enable
+bool cmaera_ball_inference_enable                       # 控制看球的摄像头是否进行推理
+bool camera_ball_draw_img_enable                        # 控制看球的摄像头是否对推理的数据进行画框
+bool camera_seedlings_inference_enable                  # 控制看秧苗的摄像头是否进行推理
+bool camera_seedlings_draw_img_enable                   # 控制看秧苗的摄像头是否对推理的数据进行画框
 ---
-bool camera_ball_inference_status
-bool camera_seedlings_inference_status
+bool camera_ball_inference_status                       # 看球的摄像头进行推理的状态
+bool camera_ball_draw_img_status                        # 看球的摄像头进行对推理的数据进行画框的状态
+bool camera_seedlings_inference_status                  # 看秧苗的摄像头进行推理的状态 
+bool camera_seedlings_draw_img_status                   # 看秧苗的摄像头进行对推理的数据进行画框的状态

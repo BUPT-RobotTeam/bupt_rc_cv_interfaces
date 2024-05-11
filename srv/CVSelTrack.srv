@@ -1,0 +1,4 @@
+int32 track_label_id                    # 所要追的框的label_id
+---
+int32 track_id                          # 返回当前所追踪的label_id
+
